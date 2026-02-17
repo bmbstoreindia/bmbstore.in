@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* user-select: none; */
+}
+
+html #root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: unset;
+}
+
+.css-1xp9930 {
+  gap: 20px;
+  height: 15%;
+}
+
+.recipe ::-webkit-scrollbar,
+.testimonials ::-webkit-scrollbar,
+.orderProductList ::-webkit-scrollbar,
+.checkout-container ::-webkit-scrollbar {
+  height: 0px; /* height of horizontal scrollbar ← You're missing this */
+  width: 0px; /* width of vertical scrollbar */
+}
+
+@media screen and (max-width: 500px) {
+  .dashCarousel,
+  .dashCarousel .carousel-inner,
+  .dashCarousel .carousel-item {
+    height: 100%;
+  }
+
+  /* Optional: ensure image never creates extra spacing */
+  .dashCarouselImg {
+    display: block;
+  }
+}

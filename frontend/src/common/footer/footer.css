@@ -1,0 +1,260 @@
+section.footer {
+  height: auto;
+}
+
+.redBox {
+  background: #e0181e;
+  display: flex;
+  padding: 0px 15px;
+  color: white;
+  align-items: center;
+  position: relative;
+}
+
+.upperBox {
+  font-family: Paytone One;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: capitalize;
+  height: 85px;
+  letter-spacing: 2px;
+}
+.lowerBox {
+  justify-content: center;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  height: 40px;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 65px;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.leftContainer > span {
+  width: 425px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.contentContainer {
+  display: flex;
+}
+.rightContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 65px;
+}
+
+.searchBoxContainer > span {
+  color: #e0181e;
+  font-family: Paytone One;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110.00000000000001%;
+  text-transform: capitalize;
+  width: 200px;
+}
+
+.socailIcons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.socailIcons img {
+  height: 25px;
+}
+
+.contact img {
+  height: 20px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.contact:hover {
+  opacity: 0.8;
+}
+
+.searchBoxContainer {
+  display: flex;
+  gap: 35px;
+  padding-bottom: 127px;
+  align-items: flex-start;
+}
+
+/* ✅ remove old focus selector (was wrong because input isn't direct child anymore) */
+.searchBoxContainer input:focus-visible {
+  outline: none;
+}
+
+/* ✅ NEW: wrapper now normal flow (no absolute button) */
+.countInBtn {
+  width: 100%;
+}
+
+/* ✅ NEW: row with two blocks on web */
+.inputsRow {
+  display: flex;
+  gap: 12px;
+  width: 95%;
+}
+
+/* ✅ NEW: each block = input + its button */
+.inputWithBtn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ✅ NEW: input style */
+.inputWithBtn input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e4e4e7;
+}
+
+/* ✅ NEW: button style */
+.inputWithBtn button {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: #b70908;
+  border: 0;
+  color: white;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 100%;
+}
+
+.inputWithBtn button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.shop,
+.QuickLink,
+.contacts {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.shop > span:first-child,
+.QuickLink > span:first-child,
+.contacts > span:first-child {
+  color: #5b231a;
+  font-family: Paytone One;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110.00000000000001%;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.shop > span:not(.shop > span:first-child),
+.QuickLink > span:not(.QuickLink > span:first-child),
+.contacts > a > span:not(.contacts > span:first-child) {
+  font-family: DM Sans;
+  color: #5b231a;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 500px) {
+  .upperBox {
+    font-size: 16px;
+  }
+  .lowerBox {
+    font-size: 12px;
+  }
+  .shop > span:not(.shop > span:first-child),
+  .QuickLink > span:not(.QuickLink > span:first-child),
+  .contacts > a > span:not(.contacts > span:first-child) {
+    font-size: 18px;
+  }
+  .leftContainer {
+    padding: 20px;
+  }
+  .leftContainer > span {
+    font-size: 14px;
+    width: 365px;
+  }
+  .contentContainer {
+    flex-direction: column;
+  }
+
+  /* ✅ spacing + alignment tweaks */
+  .searchBoxContainer {
+    flex-direction: column;
+    padding-bottom: 30px;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .rightContainer {
+    padding: 20px;
+  }
+
+  .searchBoxContainer > span {
+    width: 275px;
+    font-size: 18px;
+  }
+
+  /* ✅ stack the two blocks */
+  .inputsRow {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* ✅ stack input + button inside each block */
+  .inputWithBtn {
+    align-items: stretch;
+  }
+
+  .inputWithBtn button {
+    width: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

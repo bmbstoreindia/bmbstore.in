@@ -1,0 +1,151 @@
+/* ================= BACKDROP ================= */
+.backdrop {
+  display: flex;
+}
+
+/* ================= LOGIN BOX ================= */
+.loginBox {
+  width: 535px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 30px 32px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: auto;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  width: 120px;
+}
+
+/* ================= HEADER ================= */
+.loginTitle {
+  font-family: 'Paytone One';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #4b1f14;
+  margin: 0;
+}
+
+/* ================= INPUT ================= */
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 14px 16px;
+  gap: 10px;
+}
+
+.countryCode {
+  font-size: 16px;
+  font-weight: 500;
+  color: #58231B;
+}
+
+.inputWrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+}
+
+.inputWrapper input::placeholder {
+  color: #9a9a9a;
+}
+
+/* ================= BUTTON ================= */
+.otpButton {
+  margin-top: 10px;
+  width: 100%;
+  height: 52px;
+  border-radius: 30px;
+  border: none;
+  background: #c40000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.otpButton:hover {
+  background: #a90000;
+}
+
+/* ================= OTP SUB TITLE ================= */
+.otpSubTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #4b1f14;
+}
+
+.editIcon {
+  width: 16px;
+  cursor: pointer;
+}
+
+/* ================= OTP INPUTS ================= */
+.otpInputs {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.otpInputs input {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+}
+
+/* ================= RESEND TEXT ================= */
+.resendText {
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+/* ================= RESEND OPTIONS ================= */
+.resendOptions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.resendOptions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.resendOptions img {
+  width: 16px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  /* ================= LOGIN BOX ================= */
+  .loginBox {
+    width: 400px;
+  }
+}

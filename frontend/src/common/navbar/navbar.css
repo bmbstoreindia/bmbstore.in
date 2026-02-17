@@ -1,0 +1,26 @@
+#search {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  height: inherit;
+  width: inherit;
+  padding-left: 35px;
+  border-radius: 8px;
+  border: 1px solid #bfbfbf;
+  color: black;
+}
+
+#search::placeholder {
+  color: black;
+}
+.searchBar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+html .css-157nwcw-MuiToolbar-root {
+  padding-left: 16px;
+  padding-right: 16px;
+}

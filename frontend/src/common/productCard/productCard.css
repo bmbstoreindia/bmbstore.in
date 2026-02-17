@@ -1,0 +1,123 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* default width, overridden by inline style if width prop is passed */
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+
+/* ================= IMAGE ================= */
+.imageBox {
+  width: 90%;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* ================= DESCRIPTION ================= */
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 95%; /* default width */
+  align-items: flex-start;
+}
+
+.description > span:first-child,
+.description > span:nth-child(2),
+.addToCart {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.description > span:first-child {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+.description > span:nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+  color: #5f5f5f;
+  word-wrap: break-word; /* fix overflow */
+}
+
+/* ================= PRICE ================= */
+.price {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.discountPercent {
+  font-family: 'DM Sans', sans-serif;
+  color: green;
+}
+.price > span:first-child {
+  font-size: 14px;
+  color: #5f5f5f;
+  text-decoration: line-through;
+}
+
+.price > span:last-child {
+  font-size: 18px;
+  font-weight: 500;
+  color: #292929;
+}
+
+/* ================= BUTTON ================= */
+.addToCart {
+  width: 95%; /* default width */
+  height: 44px;
+  border-radius: 22px;
+  border: 0;
+  background: #b70908;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #b70908;
+  padding: 20px;
+  color: #b70908;
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 500px) {
+  .product {
+    width: 95%;
+  }
+  .addToCart {
+    width: 100%;
+  }
+  .description > span:first-child {
+    font-size: 16px;
+  }
+  .price > span:last-child {
+    font-size: 16px;
+  }
+  .discountPercent {
+    font-size: 12px;
+  }
+  .description > span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .price > span:first-child {
+    font-size: 12px;
+  }
+}

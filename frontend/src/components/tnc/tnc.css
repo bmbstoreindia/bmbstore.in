@@ -1,0 +1,125 @@
+/* tnc.css */
+
+/* Page wrapper */
+.tncPage {
+  background: #fffaf6; /* warm off-white */
+  padding: 32px 16px 64px;
+}
+
+/* Centered container */
+.tncContainer {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* Card */
+.tncCard {
+  background: #ffffff;
+  border: 1px solid rgba(88, 35, 27, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 28px 28px;
+}
+
+/* Header area */
+.tncHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(88, 35, 27, 0.12);
+  margin-bottom: 18px;
+}
+
+.tncTitle {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: 0.2px;
+  color: #58231b;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.tncSubtitle {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5b5b5b;
+  margin: 0;
+}
+
+/* Content typography */
+.tncContent {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #292929;
+}
+
+.tncContent p {
+  margin: 0 0 14px;
+}
+
+.tncContent h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin: 22px 0 10px;
+}
+
+.tncContent ul {
+  margin: 8px 0 16px 18px;
+  padding: 0;
+}
+
+.tncContent li {
+  margin: 8px 0;
+}
+
+/* Highlight box (optional) */
+.tncCallout {
+  background: rgba(88, 35, 27, 0.06);
+  border: 1px solid rgba(88, 35, 27, 0.12);
+  border-radius: 12px;
+  padding: 14px 14px;
+  margin-top: 18px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .tncPage {
+    padding: 18px 12px 48px;
+  }
+
+  .tncCard {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  .tncTitle {
+    font-size: 28px;
+  }
+
+  .tncSubtitle {
+    font-size: 14px;
+  }
+
+  .tncContent {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+.tncContent ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.tncContent li {
+  padding-left: 4px;
+}

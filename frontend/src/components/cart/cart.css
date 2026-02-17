@@ -1,0 +1,560 @@
+/* ================= BACKDROP ================= */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: #0000008f;
+  z-index: 999;
+}
+
+/* ================= CART PANEL ================= */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background: white;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    padding: 15px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 1;
+}
+
+/* ---------------- HEADER ---------------- */
+.layerOne {
+  display: flex;
+  gap: 10px;
+  margin-top: 65px;
+  align-items: center;
+}
+
+.layerOne > div {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #58231b;
+}
+
+.layerOne > div > span {
+  color: #b70908;
+}
+
+/* ---------------- CART PRODUCT ---------------- */
+.cartProduct {
+  display: flex;
+  border: 1px solid #efe9e9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cartProduct > img {
+  height: 125px;
+  width: 145px;
+  object-fit: cover;
+}
+
+/* ---------------- DETAILS ---------------- */
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 8px;
+}
+
+.details > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.details > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details > div:first-child > span {
+  font-family: DM Sans;
+  color: #b70908;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+/* ---------------- CART BUTTONS ---------------- */
+.cartButtons {
+  background: #efe9e9;
+  height: 35px;
+  width: 35%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.cartButtons > img {
+  height: 45%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.cartButtons > span {
+  flex: 1;
+  text-align: center;
+  height: 80%;
+  font-weight: 600;
+  background: white;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------- PRICE ---------------- */
+.cartPrice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cartPrice span:first-child {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 12px;
+}
+
+.cartPrice span:last-child {
+  color: #292929;
+  font-weight: 700;
+  font-family: DM Sans;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+}
+
+/* ---------------- LAYERS ---------------- */
+.layerTwo {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.layerThree {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.layerThree > span {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5%;
+  color: #71717a;
+  text-transform: uppercase;
+}
+
+/* ---------------- COUPON BOX ---------------- */
+.couponBox {
+  background: #f6f6f6;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 10px;
+  color: #292929;
+  border-radius: 10px;
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ================= APPLIED COUPON (GREEN BOX) ================= */
+.appliedCoupon {
+  background: #eaf7ea; /* Green background */
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.appliedCouponLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.appliedCouponLeft .savedText {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  color: #15803d; /* Dark green */
+}
+
+.appliedCouponLeft .couponName {
+  font-family: DM Sans;
+  font-size: 12px;
+  color: #15803d;
+}
+
+.appliedCouponLeft .viewCoupons {
+  font-family: DM Sans;
+  font-size: 12px;
+  color: #5f5f5f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.removeCoupon {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  color: #b70908;
+  cursor: pointer;
+}
+
+/* ---------------- FOOTER ---------------- */
+.layerFour {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+
+  /* ✅ keep footer above cart content */
+  z-index: 1001;
+
+  padding: 16px;
+  background: white;
+  box-shadow: 0px -1px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.layerPrice {
+  display: flex;
+  flex-direction: column;
+  font-family: DM Sans;
+  font-size: 12px;
+}
+
+.layerPrice > span:first-child {
+  color: #58231b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.layerPrice > span:last-child {
+  color: #5f5f5f;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.checkoutBtn {
+  background: #b70908;
+  color: white;
+  width: 40%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.layerFour {
+  padding: 16px;
+  background: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* CARD */
+.billSummary {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  width: 80%;
+  margin-bottom: 18px;
+  display: flex;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  flex-direction: column;
+}
+
+/* HEADER */
+.billHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.billHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.billTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #58231b;
+}
+
+.closeIcon {
+  font-size: 16px;
+  color: #a1a1aa;
+  cursor: pointer;
+}
+
+/* ROWS */
+.billRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #71717a;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #58231b;
+}
+
+.discount {
+  color: #16a34a;
+}
+
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: #f1f1f1;
+  margin: 12px 0;
+}
+
+/* TOTAL */
+.billTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalLabel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #292929;
+}
+
+.totalValue {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292929;
+}
+
+/* TAX TEXT */
+.taxText {
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #71717a;
+}
+
+/* ---------------- MOBILE FIXES ---------------- */
+@media screen and (max-width: 500px) {
+  .cartPrice span:first-child {
+    font-size: 10px;
+  }
+  .details {
+    gap: 35px;
+  }
+  .details > div:last-child {
+    justify-content: unset;
+  }
+  .cartButtons > span {
+    margin: 0 6px;
+  }
+  .details > div:first-child {
+    width: 95%;
+  }
+  .details > div:first-child > span {
+    font-size: 11px;
+    width: 150px;
+  }
+  .cartButtons > span {
+    margin: 0 5px;
+  }
+  .cartButtons {
+    width: 75px;
+  }
+  .price > span:last-child {
+    font-size: 16px;
+  }
+  .cartPrice {
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .cart {
+    width: 100%;
+
+    /* ✅ mobile viewport correctness (prevents weird non-scroll on some phones) */
+    height: 100dvh;
+
+    /* ✅ IMPORTANT: keep space for fixed footer (don’t reduce to 30px) */
+    padding-bottom: 140px;
+
+    gap: 15px;
+  }
+
+  .layerFour {
+    width: 100%;
+  }
+
+  .cartBox .products {
+    flex-direction: row;
+  }
+
+  .cartBox .imageBox {
+    aspect-ratio: 5 / 5;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .cartBox .imageBox > img {
+    object-fit: cover !important;
+  }
+}
+
+/* ================= COUPON SCREEN ================= */
+.showCoupon {
+  gap: 24px;
+}
+
+/* Header */
+.couponHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  color: #58231b;
+  padding-top: 75px;
+}
+
+.couponHeader img {
+  cursor: pointer;
+}
+
+/* Input */
+.couponInputBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e4e4e7;
+  border-radius: 10px;
+  padding: 12px 14px;
+  gap: 10px;
+}
+
+.couponInputBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: DM Sans;
+}
+
+.couponInputBox button {
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #71717a;
+  cursor: pointer;
+}
+
+/* Available offers */
+.availableOffers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.availableOffers > span {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #71717a;
+}
+
+/* Coupon card */
+.couponCard {
+  background: #fff4ec;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.couponLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.couponTag {
+  font-size: 12px;
+  font-weight: 600;
+  color: #58231b;
+}
+
+.couponOff {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b70908;
+}
+
+.couponLeft p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #71717a;
+}
+
+/* Apply button */
+.applyCouponBtn {
+  background: #b70908;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 32px;
+  padding: 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
