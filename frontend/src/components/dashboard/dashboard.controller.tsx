@@ -686,7 +686,7 @@ It blends easily and adds a mild peanut taste`,
 
         /* ================= STATE SET ================= */
         localStorage.setItem(LS_KEYS.blogs, JSON.stringify(mappedBlogs));
-
+        localStorage.setItem(LS_KEYS.userID,response.sessionId!)
         setUserID(response.sessionId!);
         setCart(response.data.cart_v2!);
         setProductData(mappedProducts);
